@@ -1,0 +1,43 @@
+site_name: Thesis Documentation
+
+nav:
+  - Home: index.md
+  - Huffman Compressor: huffman.md
+  - RLE Compressor: rle.md
+  - LZW Compressor: lzw.md
+
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - content.code.select
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - privacy:
+      links_attr_map:
+        target: _blank
+      links_noopener: true
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
